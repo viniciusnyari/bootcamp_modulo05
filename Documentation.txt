@@ -1,0 +1,4 @@
+#Documentação do repositório
+
+#Criar uma aplicação React com webpack e babel tudo configurado - criar em um diretório antes para evitar crias a pasta
+yarn create react-app bootcamp_modulo05
