@@ -4,7 +4,7 @@
 yarn create react-app bootcamp_modulo05
 
 #Rodando a aplicação - essa configuração está no 'package.json'
-yarn start
+yarn react-scripts start
 
 #Excluir os comentários e o arquivo 
 manifest.json
