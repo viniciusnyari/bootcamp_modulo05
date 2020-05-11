@@ -2,3 +2,19 @@
 
 #Criar uma aplicação React com webpack e babel tudo configurado - criar em um diretório antes para evitar crias a pasta
 yarn create react-app bootcamp_modulo05
+
+#Rodando a aplicação - essa configuração está no 'package.json'
+yarn start
+
+#Excluir os comentários e o arquivo 
+manifest.json
+
+Faltam excluir esses e zelar para evitar os erros
+App.css
+App.test.js
+index.css
+logo.svg
+serviceWorker.js
+
+
+
