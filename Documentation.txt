@@ -46,3 +46,8 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier babel-eslint -D
 #Instalar para fazer roteamento SPA
 yarn add react-router-dom
 
+#instalando snipped para criar automaticamente códigos
+Instale a extensão da 'Rocketseat ReactJS' e 'Rocketseat React Native'
+Aí basta digitar 'rfc' para criar um novo componente do tipo função
+
+
