@@ -50,4 +50,15 @@ yarn add react-router-dom
 Instale a extensão da 'Rocketseat ReactJS' e 'Rocketseat React Native'
 Aí basta digitar 'rfc' para criar um novo componente do tipo função
 
+#Instalando componentes de estilo
+yarn add styled-components
 
+#Instalando extensão do Styled-compoenent para não dar erros
+vscode-styled-components
+
+#Algumas informações a cerca de css
+Por padrão o html ocupa sempre o espaço necessário, mas estamos alterando para que ocupe toda a altura da tela
+min-height: 100%;
+
+Para que a fonte fique melhor definida
+-webkit-font-smoothing: antialiased !important;
