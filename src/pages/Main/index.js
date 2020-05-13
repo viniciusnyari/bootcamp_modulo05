@@ -1,8 +1,14 @@
 import React from 'react';
+import { Title } from './style';
 
 // Criando um componetente do tipo função
 function Main() {
-  return <h1>Main</h1>;
+  return (
+    <Title error={false}>
+      Main
+      <small>Menor</small>
+    </Title>
+  );
 }
 
 export default Main;
