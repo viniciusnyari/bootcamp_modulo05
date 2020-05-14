@@ -62,3 +62,6 @@ min-height: 100%;
 
 Para que a fonte fique melhor definida
 -webkit-font-smoothing: antialiased !important;
+
+#Intalar ícones do React - fontes e ícones mais famosos
+yarn add react-icons
