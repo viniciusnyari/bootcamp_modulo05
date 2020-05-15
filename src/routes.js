@@ -8,10 +8,10 @@ import Repository from './pages/Repository';
 export default function Routes() {
   return (
     <BrowserRouter>
-      <switch>
+      <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/repository" component={Repository} />
-      </switch>
+      </Switch>
     </BrowserRouter>
   );
 }

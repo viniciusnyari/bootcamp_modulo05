@@ -1,38 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { FaGithubAlt, FaPlus } from 'react-icons/fa';
 import { Container, Form, SubmitButton } from './style';
 
-// Criando um componetente do tipo função
-/*
-//Aqui temos um exemplo mais aprimorado
-//Aí tem que importar Title de ./style
-function Main() {
-  return (
-    <Title error={false}>
-      Main
-      <small>Menor</small>
-    </Title>
-  );
+export default class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { newRepo: '' };
+  }
+
+  handleInputChange = (e) => {
+    this.setState({ newRepo: e.target.value });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state.newRepo);
+  };
+
+  render() {
+    const { newRepo } = this.state;
+
+    return (
+      <Container>
+        <h1>
+          <FaGithubAlt />
+          Repositórios
+        </h1>
+
+        <Form onSubmit={this.handleSubmit}>
+          <input
+            type="text"
+            placeholder="Adicionar Repositório"
+            value={newRepo}
+            onChange={this.handleInputChange}
+          />
+
+          <SubmitButton>
+            <FaPlus color="#FFF" size={14} />
+          </SubmitButton>
+        </Form>
+      </Container>
+    );
+  }
 }
-*/
-
-function Main() {
-  return (
-    <Container>
-      <h1>
-        <FaGithubAlt />
-        Repositórios
-      </h1>
-
-      <Form onSubmit={() => {}}>
-        <input type="text" placeholder="Adicionar Repositório" />
-
-        <SubmitButton disabled>
-          <FaPlus color="#FFF" size={14} />
-        </SubmitButton>
-      </Form>
-    </Container>
-  );
-}
-
-export default Main;

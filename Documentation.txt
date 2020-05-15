@@ -65,3 +65,8 @@ Para que a fonte fique melhor definida
 
 #Intalar ícones do React - fontes e ícones mais famosos
 yarn add react-icons
+
+#Instalando a extensão 'axios'
+yarn add axios 
+03:41 - Adicionando repositórios
+
