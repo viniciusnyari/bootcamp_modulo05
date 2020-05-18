@@ -70,3 +70,8 @@ yarn add react-icons
 yarn add axios 
 03:41 - Adicionando repositórios
 
+
+
+C:\Temp\Bootcamp2019\bootcamp_modulo05
+yarn react-scripts start
+
