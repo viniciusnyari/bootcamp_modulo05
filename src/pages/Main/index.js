@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FaGithubAlt, FaPlus, FaSpinner } from 'react-icons/fa';
-import { Container, Form, SubmitButton } from './style';
+import { Container, Form, SubmitButton, List } from './style';
 import api from '../../services/api';
 
 export default class Main extends Component {
@@ -11,6 +11,24 @@ export default class Main extends Component {
       repositories: [],
       loading: false,
     };
+  }
+
+  // Recuperar as informações do localstorage
+  componentDidMount() {
+    const repositories = localStorage.getItem('repositories');
+    if (repositories) {
+      this.setState({ repositories: JSON.parse(repositories) });
+    }
+  }
+
+  // Salvar as informações no localstorage
+  // Aqui temos a informação '_' or que quero desconsiderar as informações anteriores
+  componentDidUpdate(_, prevState) {
+    const { repositories } = this.state;
+
+    if (prevState.repositories !== repositories) {
+      localStorage.setItem('repositories', JSON.stringify(repositories));
+    }
   }
 
   handleInputChange = (e) => {
@@ -37,7 +55,7 @@ export default class Main extends Component {
   };
 
   render() {
-    const { newRepo, loading } = this.state;
+    const { newRepo, repositories, loading } = this.state;
 
     return (
       <Container>
@@ -62,6 +80,15 @@ export default class Main extends Component {
             )}
           </SubmitButton>
         </Form>
+
+        <List>
+          {repositories.map((repository) => (
+            <li key={repository.name}>
+              <spam>{repository.name}</spam>
+              <a href="">Detalhes</a>
+            </li>
+          ))}
+        </List>
       </Container>
     );
   }
