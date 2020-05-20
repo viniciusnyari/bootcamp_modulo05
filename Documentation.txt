@@ -68,7 +68,7 @@ yarn add react-icons
 
 #Instalando a extensão 'axios'
 yarn add axios 
-03:41 - Adicionando repositórios
+
 
 
 
